@@ -9,7 +9,7 @@ import com.example.mpkt.utils.DB_Constants.PATIENT_ID
 import com.example.mpkt.utils.DB_Constants.NURSE_PATIENT_TABLE
 
 @Entity(tableName = NURSE_PATIENT_TABLE)
-data class NU(
+data class NP(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = ID)
     private var id: Int = 0,

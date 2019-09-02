@@ -13,7 +13,7 @@ interface BloodDao {
     fun addMeasure(bloodDB: Blood)
 
     @Query("Select * from $BLOOD_TABLE WHERE $PATIENT_ID = :id_in")
-    fun getAllBloodPatients(id_in: Int): LiveData<List<Blood>>
+    fun getAllBloodPatient(id_in: Int): LiveData<List<Blood>>
 
     @Query("Select * from $BLOOD_TABLE")
     fun getAllBlood(): LiveData<List<Blood>>

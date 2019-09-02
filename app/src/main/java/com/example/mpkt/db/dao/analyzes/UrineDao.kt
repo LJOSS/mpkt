@@ -13,7 +13,7 @@ interface UrineDao {
     fun addUrine(urineDB: Urine)
 
     @Query("Select * from $URINE_TABLE WHERE $PATIENT_ID = :id_in")
-    fun getAllUrinePatients(id_in: Int): LiveData<List<Urine>>
+    fun getAllUrinePatient(id_in: Int): LiveData<List<Urine>>
 
     @Query("SELECT * FROM $URINE_TABLE")
     fun getAllUrine(): LiveData<List<Urine>>

@@ -19,7 +19,7 @@ interface NurseDao {
     fun deleteNurse(nurseDB: Nurse)
 
     @Query("SELECT * FROM $NURSE_TABLE")
-    fun getAllNurse(): LiveData<List<Nurse>>
+    fun getAllNurses(): LiveData<List<Nurse>>
 
     @Query("Select * FROM $NURSE_TABLE WHERE $NURSE_ID= :id")
     fun getNurse(id: Int): Nurse
