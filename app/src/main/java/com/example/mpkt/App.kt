@@ -13,7 +13,6 @@ import com.example.mpkt.utils.DBConstants.DATABASE_NAME
 class App : Application() {
 
     companion object {
-
         lateinit var database: AppDatabase
             private set
 
