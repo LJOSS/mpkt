@@ -7,10 +7,10 @@ import com.example.mpkt.utils.DB_Constants.AGE
 import com.example.mpkt.utils.DB_Constants.ID
 import com.example.mpkt.utils.DB_Constants.IMAGE
 import com.example.mpkt.utils.DB_Constants.NAME
-import com.example.mpkt.utils.DB_Constants.USER_TABLE
+import com.example.mpkt.utils.DB_Constants.PATIENT_TABLE
 import com.example.mpkt.utils.DB_Constants.WEIGHT
 
-@Entity(tableName = USER_TABLE)
+@Entity(tableName = PATIENT_TABLE)
 data class Patient(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = ID)
