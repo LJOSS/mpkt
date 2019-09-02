@@ -4,8 +4,8 @@ package com.example.mpkt.db.dao.analyzes
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.mpkt.db.entity.analyzes.Temperature
-import com.example.mpkt.utils.DB_Constants.PATIENT_ID
-import com.example.mpkt.utils.DB_Constants.TEMPERATURE_TABLE
+import com.example.mpkt.utils.DBConstants.PATIENT_ID
+import com.example.mpkt.utils.DBConstants.TEMPERATURE_TABLE
 
 @Dao
 interface TemperatureDao {

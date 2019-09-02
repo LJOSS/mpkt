@@ -1,6 +1,6 @@
 package com.example.mpkt.utils
 
-object DB_Constants {
+object DBConstants {
 
     // DB Const
     const val DATABASE_NAME = "MP_DATABASE"

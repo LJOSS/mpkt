@@ -3,8 +3,8 @@ package com.example.mpkt.db.dao
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.mpkt.db.entity.Nurse
-import com.example.mpkt.utils.DB_Constants.NURSE_ID
-import com.example.mpkt.utils.DB_Constants.NURSE_TABLE
+import com.example.mpkt.utils.DBConstants.NURSE_ID
+import com.example.mpkt.utils.DBConstants.NURSE_TABLE
 
 @Dao
 interface NurseDao {

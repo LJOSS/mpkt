@@ -3,17 +3,17 @@ package com.example.mpkt.db.entity.analyzes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.mpkt.utils.DB_Constants.BLOOD_TABLE
-import com.example.mpkt.utils.DB_Constants.COLOR_INDICATOR
-import com.example.mpkt.utils.DB_Constants.ERYTHROCYTE
-import com.example.mpkt.utils.DB_Constants.HEMOGLOBIN
-import com.example.mpkt.utils.DB_Constants.LEUKOCYTE
-import com.example.mpkt.utils.DB_Constants.LYMPHOCYTES
-import com.example.mpkt.utils.DB_Constants.PATIENT_ID
-import com.example.mpkt.utils.DB_Constants.PLATELETS
-import com.example.mpkt.utils.DB_Constants.RETICULOCYTES
-import com.example.mpkt.utils.DB_Constants.SDE
-import com.example.mpkt.utils.DB_Constants.TIME
+import com.example.mpkt.utils.DBConstants.BLOOD_TABLE
+import com.example.mpkt.utils.DBConstants.COLOR_INDICATOR
+import com.example.mpkt.utils.DBConstants.ERYTHROCYTE
+import com.example.mpkt.utils.DBConstants.HEMOGLOBIN
+import com.example.mpkt.utils.DBConstants.LEUKOCYTE
+import com.example.mpkt.utils.DBConstants.LYMPHOCYTES
+import com.example.mpkt.utils.DBConstants.PATIENT_ID
+import com.example.mpkt.utils.DBConstants.PLATELETS
+import com.example.mpkt.utils.DBConstants.RETICULOCYTES
+import com.example.mpkt.utils.DBConstants.SDE
+import com.example.mpkt.utils.DBConstants.TIME
 
 // Кровь
 @Entity(tableName = BLOOD_TABLE)

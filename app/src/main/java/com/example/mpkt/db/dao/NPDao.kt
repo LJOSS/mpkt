@@ -7,8 +7,8 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.example.mpkt.db.entity.NP
 import com.example.mpkt.db.entity.special.CountUsersEachNurse
-import com.example.mpkt.utils.DB_Constants.NURSE_ID
-import com.example.mpkt.utils.DB_Constants.NURSE_PATIENT_TABLE
+import com.example.mpkt.utils.DBConstants.NURSE_ID
+import com.example.mpkt.utils.DBConstants.NURSE_PATIENT_TABLE
 
 @Dao
 interface NPDao {

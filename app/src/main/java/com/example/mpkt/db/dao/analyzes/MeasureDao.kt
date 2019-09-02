@@ -3,8 +3,8 @@ package com.example.mpkt.db.dao.analyzes
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.mpkt.db.entity.analyzes.Measure
-import com.example.mpkt.utils.DB_Constants.MEASURE_TABLE
-import com.example.mpkt.utils.DB_Constants.PATIENT_ID
+import com.example.mpkt.utils.DBConstants.MEASURE_TABLE
+import com.example.mpkt.utils.DBConstants.PATIENT_ID
 
 @Dao
 interface MeasureDao {
