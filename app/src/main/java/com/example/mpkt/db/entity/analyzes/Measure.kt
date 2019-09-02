@@ -3,12 +3,12 @@ package com.example.mpkt.db.entity.analyzes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.mpkt.utils.Constants.LOWER
-import com.example.mpkt.utils.Constants.MEASURE_TABLE
-import com.example.mpkt.utils.Constants.PATIENT_ID
-import com.example.mpkt.utils.Constants.PULSE
-import com.example.mpkt.utils.Constants.UPPER
-import com.example.mpkt.utils.Constants.TIME
+import com.example.mpkt.utils.DB_Constants.LOWER
+import com.example.mpkt.utils.DB_Constants.MEASURE_TABLE
+import com.example.mpkt.utils.DB_Constants.PATIENT_ID
+import com.example.mpkt.utils.DB_Constants.PULSE
+import com.example.mpkt.utils.DB_Constants.UPPER
+import com.example.mpkt.utils.DB_Constants.TIME
 
 // Давление
 @Entity(tableName = MEASURE_TABLE)

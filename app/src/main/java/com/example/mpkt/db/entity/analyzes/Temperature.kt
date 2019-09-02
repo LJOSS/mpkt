@@ -3,17 +3,17 @@ package com.example.mpkt.db.entity.analyzes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.mpkt.utils.Constants
-import com.example.mpkt.utils.Constants.PATIENT_ID
-import com.example.mpkt.utils.Constants.TEMPERATURE
-import com.example.mpkt.utils.Constants.TEMP_TABLE
-import com.example.mpkt.utils.Constants.TIME
+import com.example.mpkt.utils.DB_Constants
+import com.example.mpkt.utils.DB_Constants.PATIENT_ID
+import com.example.mpkt.utils.DB_Constants.TEMPERATURE
+import com.example.mpkt.utils.DB_Constants.TEMP_TABLE
+import com.example.mpkt.utils.DB_Constants.TIME
 
 // Температура
 @Entity(tableName = TEMP_TABLE)
 data class Temperature(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = Constants.ID)
+    @ColumnInfo(name = DB_Constants.ID)
     private var id: Int = 0,
     @ColumnInfo(name = TEMPERATURE)
     private var Temp: Double? = null,

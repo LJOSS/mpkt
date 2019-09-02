@@ -3,14 +3,14 @@ package com.example.mpkt.db.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.mpkt.utils.Constants.AGE
-import com.example.mpkt.utils.Constants.EMAIL
-import com.example.mpkt.utils.Constants.IMAGE
-import com.example.mpkt.utils.Constants.NAME
-import com.example.mpkt.utils.Constants.NURSE_ID
-import com.example.mpkt.utils.Constants.NURSE_TABLE
-import com.example.mpkt.utils.Constants.PATIENTS
-import com.example.mpkt.utils.Constants.WEIGHT
+import com.example.mpkt.utils.DB_Constants.AGE
+import com.example.mpkt.utils.DB_Constants.EMAIL
+import com.example.mpkt.utils.DB_Constants.IMAGE
+import com.example.mpkt.utils.DB_Constants.NAME
+import com.example.mpkt.utils.DB_Constants.NURSE_ID
+import com.example.mpkt.utils.DB_Constants.NURSE_TABLE
+import com.example.mpkt.utils.DB_Constants.PATIENTS
+import com.example.mpkt.utils.DB_Constants.WEIGHT
 
 
 @Entity(tableName = NURSE_TABLE)
