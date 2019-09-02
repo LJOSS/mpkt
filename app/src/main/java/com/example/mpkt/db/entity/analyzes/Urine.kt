@@ -3,15 +3,15 @@ package com.example.mpkt.db.entity.analyzes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.mpkt.utils.Constants.ACIDITY
-import com.example.mpkt.utils.Constants.COLOR
-import com.example.mpkt.utils.Constants.DENSITY
-import com.example.mpkt.utils.Constants.ID
-import com.example.mpkt.utils.Constants.PATIENT_ID
-import com.example.mpkt.utils.Constants.PROTEIN
-import com.example.mpkt.utils.Constants.TIME
-import com.example.mpkt.utils.Constants.TRANSPARENCY
-import com.example.mpkt.utils.Constants.URINE_TABLE
+import com.example.mpkt.utils.DB_Constants.ACIDITY
+import com.example.mpkt.utils.DB_Constants.COLOR
+import com.example.mpkt.utils.DB_Constants.DENSITY
+import com.example.mpkt.utils.DB_Constants.ID
+import com.example.mpkt.utils.DB_Constants.PATIENT_ID
+import com.example.mpkt.utils.DB_Constants.PROTEIN
+import com.example.mpkt.utils.DB_Constants.TIME
+import com.example.mpkt.utils.DB_Constants.TRANSPARENCY
+import com.example.mpkt.utils.DB_Constants.URINE_TABLE
 
 // Моча
 @Entity(tableName = URINE_TABLE)
