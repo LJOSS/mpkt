@@ -16,7 +16,7 @@ import com.example.mpkt.db.entity.analyzes.Blood
 import com.example.mpkt.db.entity.analyzes.Measure
 import com.example.mpkt.db.entity.analyzes.Temperature
 import com.example.mpkt.db.entity.analyzes.Urine
-import com.example.mpkt.utils.DB_Constants.CURRENT_DB_VERSION
+import com.example.mpkt.utils.DBConstants.CURRENT_DB_VERSION
 
 @Database(entities = [(Blood::class),
         (Temperature::class),

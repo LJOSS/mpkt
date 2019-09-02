@@ -3,21 +3,21 @@ package com.example.mpkt.db.dao
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.mpkt.db.entity.Patient
-import com.example.mpkt.utils.DB_Constants.ID
-import com.example.mpkt.utils.DB_Constants.NURSE_ID
-import com.example.mpkt.utils.DB_Constants.NURSE_PATIENT_TABLE
-import com.example.mpkt.utils.DB_Constants.PATIENT_TABLE
+import com.example.mpkt.utils.DBConstants.ID
+import com.example.mpkt.utils.DBConstants.NURSE_ID
+import com.example.mpkt.utils.DBConstants.NURSE_PATIENT_TABLE
+import com.example.mpkt.utils.DBConstants.PATIENT_TABLE
 
 @Dao
 interface PatientDao {
     @Update
-    fun updatePatient(userDB: Patient)
+    fun updatePatient(patient: Patient)
 
     @Insert
-    fun addPatient(userDB: Patient)
+    fun addPatient(patient: Patient)
 
     @Delete
-    fun deletePatient(userDB: Patient)
+    fun deletePatient(patient: Patient)
 
     @Query("SELECT * FROM $PATIENT_TABLE")
     fun getPatients(): LiveData<List<Patient>>
