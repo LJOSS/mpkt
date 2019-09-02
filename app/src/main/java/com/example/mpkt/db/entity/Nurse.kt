@@ -17,17 +17,17 @@ import com.example.mpkt.utils.DB_Constants.WEIGHT
 data class Nurse(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = NURSE_ID)
-    private var nurseid: Int = 0,
+    var nurseid: Int = 0,
     @ColumnInfo(name = NAME)
-    private var name: String? = null,
+    var name: String? = null,
     @ColumnInfo(name = WEIGHT)
-    private var weight: Int = 0,
+    var weight: Int = 0,
     @ColumnInfo(name = AGE)
-    private var age: String? = null,
+    var age: String? = null,
     @ColumnInfo(name = IMAGE)
-    private var image: String? = null,
+    var image: String? = null,
     @ColumnInfo(name = PATIENTS)
-    private var patients: String? = null,
+    var patients: String? = null,
     @ColumnInfo(name = EMAIL)
-    private var email: String? = null
+    var email: String? = null
 )

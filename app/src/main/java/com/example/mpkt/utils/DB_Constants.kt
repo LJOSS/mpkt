@@ -3,7 +3,7 @@ package com.example.mpkt.utils
 object DB_Constants {
 
     // DB Const
-    const val DATABASE_NAME = ""
+    const val DATABASE_NAME = "MP_DATABASE"
     const val DATABASE_VERSION_1 = 1
 
     const val CURRENT_DB_VERSION = DATABASE_VERSION_1

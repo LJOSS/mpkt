@@ -18,16 +18,14 @@ import com.example.mpkt.db.entity.analyzes.Temperature
 import com.example.mpkt.db.entity.analyzes.Urine
 import com.example.mpkt.utils.DB_Constants.CURRENT_DB_VERSION
 
-@Database(
-    entities = [(Blood::class),
+@Database(entities = [(Blood::class),
         (Temperature::class),
         (Measure::class),
         (Urine::class),
         (NP::class),
         (Nurse::class),
         (Patient::class)],
-    version = CURRENT_DB_VERSION, exportSchema = false
-)
+    version = CURRENT_DB_VERSION, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun getBloodDao(): BloodDao
     abstract fun getTemperatureDao(): TemperatureDao

@@ -12,9 +12,9 @@ import com.example.mpkt.utils.DB_Constants.NURSE_PATIENT_TABLE
 data class NP(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = ID)
-    private var id: Int = 0,
+    var id: Int = 0,
     @ColumnInfo(name = NURSE_ID)
-    private var id_nurse: Int = 0,
+    var id_nurse: Int = 0,
     @ColumnInfo(name = PATIENT_ID)
-    private var id_user: Int = 0
+    var id_user: Int = 0
 )
