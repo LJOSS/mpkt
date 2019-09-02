@@ -19,26 +19,26 @@ import com.example.mpkt.utils.DB_Constants.TIME
 @Entity(tableName = BLOOD_TABLE)
 data class Blood(
     @PrimaryKey(autoGenerate = true)
-    private var id: Int = 0,
+    var id: Int = 0,
     @ColumnInfo(name = HEMOGLOBIN)
-    private var hemoglobin: Int = 0,
+    var hemoglobin: Int = 0,
     @ColumnInfo(name = ERYTHROCYTE)
-    private var erythrocyte: Double = 0.toDouble(),
+    var erythrocyte: Double = 0.toDouble(),
     @ColumnInfo(name = COLOR_INDICATOR)
-    private var color_indicator: Double = 0.toDouble(),
+    var color_indicator: Double = 0.toDouble(),
     @ColumnInfo(name = RETICULOCYTES)
-    private var reticulocytes: Double = 0.toDouble(),
+    var reticulocytes: Double = 0.toDouble(),
     @ColumnInfo(name = PLATELETS)
-    private var platelets: Int = 0,
+    var platelets: Int = 0,
     @ColumnInfo(name = SDE)
-    private var sde: Int = 0,
+    var sde: Int = 0,
     @ColumnInfo(name = LEUKOCYTE)
-    private var leukocyte: Int = 0,
+    var leukocyte: Int = 0,
     @ColumnInfo(name = LYMPHOCYTES)
-    private var lymphocytes: Int = 0,
+    var lymphocytes: Int = 0,
 
     @ColumnInfo(name = PATIENT_ID)
-    private var patient_id: Int = 0,
+    var patient_id: Int = 0,
     @ColumnInfo(name = TIME)
-    private var time: String? = null
+    var time: String? = null
 )

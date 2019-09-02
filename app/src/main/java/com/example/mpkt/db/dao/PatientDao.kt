@@ -6,7 +6,6 @@ import com.example.mpkt.db.entity.Patient
 import com.example.mpkt.utils.DB_Constants.ID
 import com.example.mpkt.utils.DB_Constants.NURSE_ID
 import com.example.mpkt.utils.DB_Constants.NURSE_PATIENT_TABLE
-import com.example.mpkt.utils.DB_Constants.PATIENT_ID
 import com.example.mpkt.utils.DB_Constants.PATIENT_TABLE
 
 @Dao
@@ -23,7 +22,7 @@ interface PatientDao {
     @Query("SELECT * FROM $PATIENT_TABLE")
     fun getPatients(): LiveData<List<Patient>>
 
-    @Query("Select * FROM $PATIENT_TABLE WHERE $PATIENT_ID= :patient_ids")
+    @Query("Select * FROM $PATIENT_TABLE WHERE $ID= :patient_ids")
     fun getPatientByID(patient_ids: Int): Patient
 
     @Query(

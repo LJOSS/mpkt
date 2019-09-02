@@ -14,11 +14,11 @@ import com.example.mpkt.utils.DB_Constants.TIME
 data class Temperature(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = DB_Constants.ID)
-    private var id: Int = 0,
+     var id: Int = 0,
     @ColumnInfo(name = TEMPERATURE)
-    private var Temp: Double? = null,
+     var Temp: Double? = null,
     @ColumnInfo(name = PATIENT_ID)
-    private var patient_id: Int = 0,
+     var patient_id: Int = 0,
     @ColumnInfo(name = TIME)
-    private var time: String? = null
+     var time: String? = null
 )

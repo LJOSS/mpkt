@@ -25,7 +25,7 @@ interface NPDao {
     fun getAllPatientsToNurse(idNurse: Int): LiveData<List<NP>>
 
     @Query(
-        "select nurse_table.nurse_id ,count(nurse_patient_table.nurse_id) as count from nurse_table " +
+        "select nurse_table.nurse_id ,count(nurse_patient_table.nurse_id) as count_of_patients from nurse_table " +
                 "join nurse_patient_table on nurse_table.nurse_id = nurse_patient_table.nurse_id " +
                 "group by nurse_table.nurse_id"
     )

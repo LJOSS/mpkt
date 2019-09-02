@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "366300215118",
+    "firebase_url": "https://measurepreasure-kt.firebaseio.com",
+    "project_id": "measurepreasure-kt",
+    "storage_bucket": "measurepreasure-kt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366300215118:android:f43ebd7918d0df17",
+        "android_client_info": {
+          "package_name": "com.example.mpkt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366300215118-hvq6tgttn27ev53jk882qae13105kumv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Z_4VyxiBq-ZW0iK2dYNPMKyR5W0RWh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366300215118-hvq6tgttn27ev53jk882qae13105kumv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

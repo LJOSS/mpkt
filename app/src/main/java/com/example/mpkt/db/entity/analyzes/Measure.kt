@@ -14,15 +14,15 @@ import com.example.mpkt.utils.DB_Constants.TIME
 @Entity(tableName = MEASURE_TABLE)
 data class Measure(
     @PrimaryKey(autoGenerate = true)
-    private var id: Int = 0,
+    var id: Int = 0,
     @ColumnInfo(name = UPPER)
-    private var Upper: Int = 0,
+    var Upper: Int = 0,
     @ColumnInfo(name = LOWER)
-    private var Lower: Int = 0,
+    var Lower: Int = 0,
     @ColumnInfo(name = PULSE)
-    private var Pulse: Int = 0,
+    var Pulse: Int = 0,
     @ColumnInfo(name = PATIENT_ID)
-    private var patient_id: Int = 0,
+    var patient_id: Int = 0,
     @ColumnInfo(name = TIME)
-    private var time: String? = null
+    var time: String? = null
 )
