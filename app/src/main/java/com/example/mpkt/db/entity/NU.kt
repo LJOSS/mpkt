@@ -6,15 +6,15 @@ import androidx.room.PrimaryKey
 import com.example.mpkt.utils.DB_Constants.ID
 import com.example.mpkt.utils.DB_Constants.NURSE_ID
 import com.example.mpkt.utils.DB_Constants.PATIENT_ID
-import com.example.mpkt.utils.DB_Constants.NURSE_USER_TABLE
+import com.example.mpkt.utils.DB_Constants.NURSE_PATIENT_TABLE
 
-@Entity(tableName = NURSE_USER_TABLE)
+@Entity(tableName = NURSE_PATIENT_TABLE)
 data class NU(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = ID)
     private var id: Int = 0,
     @ColumnInfo(name = NURSE_ID)
-    private var idnurse: Int = 0,
+    private var id_nurse: Int = 0,
     @ColumnInfo(name = PATIENT_ID)
-    private var iduser: Int = 0
+    private var id_user: Int = 0
 )

@@ -6,11 +6,11 @@ import androidx.room.PrimaryKey
 import com.example.mpkt.utils.DB_Constants
 import com.example.mpkt.utils.DB_Constants.PATIENT_ID
 import com.example.mpkt.utils.DB_Constants.TEMPERATURE
-import com.example.mpkt.utils.DB_Constants.TEMP_TABLE
+import com.example.mpkt.utils.DB_Constants.TEMPERATURE_TABLE
 import com.example.mpkt.utils.DB_Constants.TIME
 
 // Температура
-@Entity(tableName = TEMP_TABLE)
+@Entity(tableName = TEMPERATURE_TABLE)
 data class Temperature(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = DB_Constants.ID)

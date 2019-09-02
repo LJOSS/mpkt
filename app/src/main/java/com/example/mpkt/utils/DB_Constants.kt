@@ -8,14 +8,11 @@ object DB_Constants {
 
     const val CURRENT_DB_VERSION = DATABASE_VERSION_1
 
-
-
-
     // TABLE NAME
-    const val TEMP_TABLE = "temperature_table"
-    const val NURSE_USER_TABLE = "nurse_user_table"
+    const val TEMPERATURE_TABLE = "temperature_table"
+    const val NURSE_PATIENT_TABLE = "nurse_patient_table"
     const val NURSE_TABLE = "nurse_table"
-    const val USER_TABLE = "USERS"
+    const val PATIENT_TABLE = "patient_table"
     const val BLOOD_TABLE = "blood_table"
     const val URINE_TABLE = "urine_table"
     const val MEASURE_TABLE = "measure_table"
@@ -31,6 +28,9 @@ object DB_Constants {
     const val AGE = "age"
     const val EMAIL = "email"
     const val PATIENTS = "patients"
+
+    // Количество пациентов
+    const val COUNT_OF_PATIENT = "count_of_patients"
 
     // Время записи
     const val TIME = "time"
