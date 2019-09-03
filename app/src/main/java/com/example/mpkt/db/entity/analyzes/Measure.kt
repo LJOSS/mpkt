@@ -16,11 +16,11 @@ data class Measure(
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0,
     @ColumnInfo(name = UPPER)
-    var Upper: Int = 0,
+    var upper: Int = 0,
     @ColumnInfo(name = LOWER)
-    var Lower: Int = 0,
+    var lower: Int = 0,
     @ColumnInfo(name = PULSE)
-    var Pulse: Int = 0,
+    var pulse: Int = 0,
     @ColumnInfo(name = PATIENT_ID)
     var patient_id: Int = 0,
     @ColumnInfo(name = TIME)

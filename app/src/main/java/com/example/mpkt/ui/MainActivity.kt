@@ -4,9 +4,11 @@ import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.mpkt.App
 import com.example.mpkt.R
 import com.example.mpkt.utils.requestPermission
 import com.example.mpkt.utils.checkPermission
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,13 +22,27 @@ class MainActivity : AppCompatActivity() {
 
         if (!checkPermission(applicationContext)) {
             requestPermission(this)
-        }else{
+        } else {
             showSuccessToast()
+        }
+        download.setOnClickListener {
+            downloadAll()
+        }
+        upload.setOnClickListener {
+            uploadAll()
         }
     }
 
+    private fun downloadAll() {
+        App.downloadController.downloadAll()
+    }
+
+    private fun uploadAll() {
+        App.uploadController.convertAndUploadAll()
+    }
+
     private fun showSuccessToast() {
-        Toast.makeText(this, "SUCSECC PERMISSIONS", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "SUCCESS PERMISSIONS", Toast.LENGTH_LONG).show()
     }
 
     override fun onRequestPermissionsResult(

@@ -10,7 +10,7 @@ import com.example.mpkt.utils.DBConstants.PATIENT_ID
 interface BloodDao {
 
     @Insert
-    fun addMeasure(bloodDB: Blood)
+    fun addBlood(bloodDB: Blood)
 
     @Query("Select * from $BLOOD_TABLE WHERE $PATIENT_ID = :id_in")
     fun getAllBloodPatient(id_in: Int): LiveData<List<Blood>>

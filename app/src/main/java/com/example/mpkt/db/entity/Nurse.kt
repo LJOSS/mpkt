@@ -9,7 +9,6 @@ import com.example.mpkt.utils.DBConstants.IMAGE
 import com.example.mpkt.utils.DBConstants.NAME
 import com.example.mpkt.utils.DBConstants.NURSE_ID
 import com.example.mpkt.utils.DBConstants.NURSE_TABLE
-import com.example.mpkt.utils.DBConstants.PATIENTS
 import com.example.mpkt.utils.DBConstants.WEIGHT
 
 
@@ -26,8 +25,6 @@ data class Nurse(
     var age: String? = null,
     @ColumnInfo(name = IMAGE)
     var image: String? = null,
-    @ColumnInfo(name = PATIENTS)
-    var patients: String? = null,
     @ColumnInfo(name = EMAIL)
     var email: String? = null
 )
