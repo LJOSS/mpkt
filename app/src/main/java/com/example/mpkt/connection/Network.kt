@@ -14,6 +14,7 @@ import java.io.*
 
 class Network(private val jsonFile: File, private val type: String) :
     AsyncTask<String, Void, FileOutputStream?>() {
+    //TODO удали комментарии и неиспользуемые переменные
     lateinit var progressDialog: ProgressDialog
 
     override fun onPreExecute() {

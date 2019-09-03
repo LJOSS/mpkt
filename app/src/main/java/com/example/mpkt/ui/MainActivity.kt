@@ -20,17 +20,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // можно вынести в отдельный метод, а потом вызвать в OnCreate
         if (!checkPermission(applicationContext)) {
             requestPermission(this)
         } else {
             showSuccessToast()
         }
+        //
+
+        // тоже самое
         download.setOnClickListener {
             downloadAll()
         }
         upload.setOnClickListener {
             uploadAll()
         }
+        //
     }
 
     private fun downloadAll() {
@@ -50,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         permissions: Array<String>,
         grantResults: IntArray
     ) {
+        // какой смысл от when, если константа всегда равна 99?
         when (requestCode) {
             PERMISSION_REQUEST_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
