@@ -1,15 +1,10 @@
 *.iml
-*.gradle
-*.properties
+.gradle
 /local.properties
-/.idea
+.idea
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 /app/libs
 /app/build
-/app/proguard-rules.pro
-*.bat
-gradlew
-/gradle
