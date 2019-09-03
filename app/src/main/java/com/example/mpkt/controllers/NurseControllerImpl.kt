@@ -24,7 +24,7 @@ class NurseControllerImpl : NurseController {
         App.database.getNurseDao().addNurse(nurseDB = nurse)
     }
 
-    override fun showAllNurses(): List<Nurse> {
+    override fun getAllNurses(): List<Nurse> {
         val listNurses = arrayListOf<Nurse>()
         App.database.getNurseDao().getAllNurses().observeForever {
             if (it != null) {

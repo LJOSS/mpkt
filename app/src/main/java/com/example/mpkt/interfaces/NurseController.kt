@@ -4,7 +4,7 @@ import com.example.mpkt.db.entity.Nurse
 
 interface NurseController {
     fun addNurse(nurse: Nurse)
-    fun showAllNurses(): List<Nurse>
+    fun getAllNurses(): List<Nurse>
     fun getCurrentNurse(nurseId: Int): Nurse
     fun insertAllNurses(nurseList: List<Nurse>)
     fun deleteAll()

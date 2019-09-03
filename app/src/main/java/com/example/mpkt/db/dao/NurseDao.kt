@@ -3,6 +3,7 @@ package com.example.mpkt.db.dao
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.mpkt.db.entity.Nurse
+import com.example.mpkt.utils.DBConstants
 import com.example.mpkt.utils.DBConstants.NURSE_ID
 import com.example.mpkt.utils.DBConstants.NURSE_TABLE
 
@@ -26,4 +27,9 @@ interface NurseDao {
 
     @Query("DELETE FROM $NURSE_TABLE")
     fun deleteAllNurses()
+
+    companion object{
+        const val DELETE_PATIENTS = "ALTER TABLE $NURSE_TABLE " +
+                "DROP COLUMN ${DBConstants.PATIENTS}"
+    }
 }

@@ -32,7 +32,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun getUrineDao(): UrineDao
     abstract fun getMeasureDao(): MeasureDao
 
-    abstract fun getNUDao(): NPDao
+    abstract fun getNPDao(): NPDao
     abstract fun getNurseDao(): NurseDao
     abstract fun getPatientDao(): PatientDao
 }

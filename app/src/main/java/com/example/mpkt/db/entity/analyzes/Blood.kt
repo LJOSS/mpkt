@@ -7,6 +7,7 @@ import com.example.mpkt.utils.DBConstants.BLOOD_TABLE
 import com.example.mpkt.utils.DBConstants.COLOR_INDICATOR
 import com.example.mpkt.utils.DBConstants.ERYTHROCYTE
 import com.example.mpkt.utils.DBConstants.HEMOGLOBIN
+import com.example.mpkt.utils.DBConstants.ID
 import com.example.mpkt.utils.DBConstants.LEUKOCYTE
 import com.example.mpkt.utils.DBConstants.LYMPHOCYTES
 import com.example.mpkt.utils.DBConstants.PATIENT_ID
@@ -19,6 +20,7 @@ import com.example.mpkt.utils.DBConstants.TIME
 @Entity(tableName = BLOOD_TABLE)
 data class Blood(
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo (name = ID)
     var id: Int = 0,
     @ColumnInfo(name = HEMOGLOBIN)
     var hemoglobin: Int = 0,

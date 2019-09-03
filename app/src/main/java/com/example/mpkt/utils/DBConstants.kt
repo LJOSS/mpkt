@@ -5,8 +5,9 @@ object DBConstants {
     // DB Const
     const val DATABASE_NAME = "MP_DATABASE"
     const val DATABASE_VERSION_1 = 1
+    const val DATABASE_VERSION_2 = 2
 
-    const val CURRENT_DB_VERSION = DATABASE_VERSION_1
+    const val CURRENT_DB_VERSION = DATABASE_VERSION_2
 
     // TABLE NAME
     const val TEMPERATURE_TABLE = "temperature_table"
@@ -56,7 +57,7 @@ object DBConstants {
 
     ////////////////ТЕМПЕРАТУРА/////////////////////////
     // Температура
-    const val TEMPERATURE = "temperature"
+    const val TEMPERATURE_C = "temperature"
     ////////////////ТЕМПЕРАТУРА/////////////////////////
 
     ////////////////КРОВЬ/////////////////////////

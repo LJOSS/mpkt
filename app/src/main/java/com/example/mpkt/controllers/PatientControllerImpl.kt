@@ -10,7 +10,7 @@ class PatientControllerImpl : PatientController {
         App.database.getPatientDao().addPatient(patient)
     }
 
-    override fun showAllPatients(): List<Patient> {
+    override fun getAllPatients(): List<Patient> {
         val listPatients = arrayListOf<Patient>()
         App.database.getPatientDao().getPatients().observeForever {
             if (it != null) {
