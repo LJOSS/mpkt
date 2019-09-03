@@ -1,14 +1,15 @@
 package com.example.mpkt.utils
 
 import android.Manifest
+import android.app.Activity
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.mpkt.App
 import com.example.mpkt.ui.MainActivity
 
-
-fun checkPermission(context: Context): Boolean {
+fun checkPermission(context: Context = App.instance): Boolean {
     val write = ContextCompat.checkSelfPermission(
         context,
         Manifest.permission.WRITE_EXTERNAL_STORAGE
@@ -25,7 +26,7 @@ fun checkPermission(context: Context): Boolean {
 }
 
 
-fun requestPermission(activity: MainActivity) {
+fun requestPermission(activity: Activity) {
     ActivityCompat.requestPermissions(
         activity,
         arrayOf(
